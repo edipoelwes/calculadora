@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/calc.css">
+    <script src="assets/js/calc.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="logo">
+        <div id="logo">EdTec</div>
+        </div>
+            <form name="calcform" method="post" action="">
+                <input type="text" name="visor" id="visor">
+            </form>
+        <div class="numbers">
+            <div class="botoes">
+                <div class="ce calc">
+                    <input class="btn num" id="ce" name="limpar" type="button" onclick="reset();" value="CE">
+                </div>
+                
+                <div class="botoes3" id="calc">
+                    <input class="btn" type="button" value="7" onclick="botao(value)">
+                    <input class="btn" type="button" value="8" onclick="botao(value)">
+                    <input class="btn" type="button" value="9" onclick="botao(value)">
+                    <input class="btn oper"  name="dividir" type="button" value="/" onclick="calcParse('dividir')">
+                </div>
+                    
+                
+                <div class="botoes2" id="calc" >
+                    <input class="btn" type="button" value="4" onclick="botao(value)">
+                    <input class="btn" type="button" value="5" onclick="botao(value)">
+                    <input class="btn" type="button" value="6" onclick="botao(value)">
+                    <input class="btn oper"  name="subtrair" type="button" value="-" onclick="calcParse('subtrair')">
+                </div>
+                    
+
+                <div class="botoes1" id="calc">
+                    <input class="btn" type="button" value="1" onclick="botao(value)">
+                    <input class="btn" type="button" value="2" onclick="botao(value)">
+                    <input class="btn" type="button" value="3" onclick="botao(value)">
+                    <input class="btn oper"  name="multiplicar" type="button" value="*" onclick="calcParse('multiplicar')">
+                </div>
+
+                <div class="botoes0" id="calc">
+                    <input class="btn" type="button" value="." onclick="botao(value)">
+                    <input class="btn" type="button" value="0" onclick="botao(value)">
+                    <input class="btn num" name="igual" type="button" value="=" onclick="calcParse('resultado')">
+                    <input class="btn oper" name="somar" type="button" value="+" onclick="calcParse('somar')">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
